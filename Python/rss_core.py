@@ -1,7 +1,8 @@
 import feedparser
+import urllib
+import newspaper3k
+emotion = 2
 
-emotion = 0
-print(emotion)
 # Code to change emotion goes here.
 
 # Emotion = 0 --> Normal
@@ -10,11 +11,7 @@ print(emotion)
 # Emotion = 2 --> Bored
 # EMotion = -2 --> Depressed
 
-#def ch_emo:
-
-
+reuters = newspaper.build('https://in.reuters.com/')
 if (emotion == 2):
-	t = feedparser.parse('http://feeds.reuters.com/reuters/oddlyEnoughNews')
-	for post in t.entries:
-    	print(post.title + '\n : ' + post.link + '\n')
-
+    for article in reuters.articles:
+    	print(article.url)
