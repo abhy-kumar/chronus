@@ -20,7 +20,7 @@ urls = []
 buttons = []
 text = []
 
-root = Tk()
+root = tk.Tk()
 root.wm_title("Chronus")
 addRSSButton = None
 refreshRSSButton = None
