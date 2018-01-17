@@ -1,6 +1,6 @@
 import tkinter as tk
 
-LARGE_FONT= ("Segoe UI Light", 12)
+LARGE_FONT= ("Verdana", 12)
 
 class rss_core(tk.Tk):
 
@@ -16,11 +16,6 @@ class rss_core(tk.Tk):
 
         self.frames = {}
 
-        for F in (StartPage,PageOne):
-            frame = F(container,self)
-            self.frames[F] = frame
-            frame.grid(row = 0, column = 0, sticky ="nsew")
-
         frame = StartPage(container, self)
 
         self.frames[StartPage] = frame
@@ -33,27 +28,15 @@ class rss_core(tk.Tk):
 
         frame = self.frames[cont]
         frame.tkraise()
+
         
 class StartPage(tk.Frame):
 
     def __init__(self, parent, controller):
-        tk.Frame.__init__(self,parent, bg = 'Grey')
-        label = tk.Label(self, text="Hi!", font=LARGE_FONT, bg = 'Grey')
-        label.pack(pady=10,padx=10)
-
-        button1 = tk.Button(self, text = 'Enter Your Details', command = lambda: controller.show_frame(PageOne))
-
-        button1.pack()
-
-class PageOne(tk.Frame):
-    def __init__(self,parent, controller):
         tk.Frame.__init__(self,parent)
-        label = tk.Label(self, text="Hi!", font=LARGE_FONT, bg = 'Grey')
+        label = tk.Label(self, text="Start Page", font=LARGE_FONT)
         label.pack(pady=10,padx=10)
 
-        button1 = tk.Button(self, text = 'Back', command = lambda: controller.show_frame(StartPage))
-
-        button1.pack()
 
 app = rss_core()
 app.mainloop()

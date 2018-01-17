@@ -3,7 +3,7 @@ import urllib
 import newspaper3k
 emotion = 2
 
-# Code to change emotion goes here.
+
 
 # Emotion = 0 --> Normal
 # Emotion = 1 --> Cheerful
