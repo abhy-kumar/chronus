@@ -1,0 +1,4 @@
+https://news.google.com/news/rss/headlines/section/topic/TECHNOLOGY?ned=us&hl=en&gl=US
+http://rss.cnn.com/rss/edition_technology.rss
+http://feeds.reuters.com/reuters/INVideoTechnology
+http://feeds.reuters.com/reuters/INtechnologyNews

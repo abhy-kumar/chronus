@@ -1,6 +1,6 @@
 import feedparser
 import urllib
-import newspaper3k
+
 emotion = 2
 
 
@@ -11,7 +11,8 @@ emotion = 2
 # Emotion = 2 --> Bored
 # EMotion = -2 --> Depressed
 
-reuters = newspaper.build('https://in.reuters.com/')
-if (emotion == 2):
-    for article in reuters.articles:
-    	print(article.url)
+toi_top = feedparser.parse(r'https://timesofindia.indiatimes.com/rssfeedstopstories.cms')
+for post in toi_top.entries:
+    print(toi_top['feed']['description'])
+
+feed https://news.ycombinator.com/rss
