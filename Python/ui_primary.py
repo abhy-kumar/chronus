@@ -1,13 +1,19 @@
 import tkinter as tk
 from tkinter import ttk
 
-font_x = ("Segoe UI Light", 42)
+font_x = ("Segoe UI Light", 32)
 
 
 class rss_core(tk.Tk):
 
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
+
+        #icon changes here:
+        # tk.Tk.iconbitmap(self, default ='iconbeta.ico')
+        #title changes here:
+        tk.Tk.wm_title(self, 'Chronus')
+
         container = tk.Frame(self)
 
         container.pack(side="top", fill="both", expand=True)
@@ -16,6 +22,7 @@ class rss_core(tk.Tk):
 
         self.frames = {}
 
+        # Add Frame list here:
         for F in (StartPage, PageOne, PageTwo):
             frame = F(container, self)
             self.frames[F] = frame
