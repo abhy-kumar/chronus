@@ -1,4 +1,4 @@
-# readle
+# Chronus
 ![alt text](https://image.ibb.co/kh2Qz6/iconbeta.png)
 
 
