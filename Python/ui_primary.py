@@ -10,7 +10,7 @@ class rss_core(tk.Tk):
         tk.Tk.__init__(self, *args, **kwargs)
 
         #icon changes here:
-        # tk.Tk.iconbitmap(self, default ='iconbeta.ico')
+        tk.Tk.iconbitmap(self, 'iconbeta.png')
         #title changes here:
         tk.Tk.wm_title(self, 'Chronus')
 
