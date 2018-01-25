@@ -1,3 +1,9 @@
+import matplotlib
+matplotlib.use("TkAgg")
+
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2TkAgg
+from matplotlib.figure import Figure
+
 import tkinter as tk
 from tkinter import ttk
 
@@ -71,7 +77,14 @@ class PageTwo(tk.Frame):
 
         button1 = ttk.Button(self, text='Home', command=lambda: controller.show_frame(StartPage))
         button1.pack()
-
+        
+        f = Figure(figsize = (5,5), dpi=120)
+        a = f.add_subplot(111)
+        a.plot([1,2,3,4,5,6,7],[9,3,3,3,2,2,2])
+        
+        canvas = FigureCanvasTkAgg(f, self)
+        canvas.show()
+        canvas.get_tk_widget().pack(side = tk.TOP, fill = tk.BOTH, expand = True)
         
 
 app = rss_core()

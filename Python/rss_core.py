@@ -15,4 +15,3 @@ toi_top = feedparser.parse(r'https://timesofindia.indiatimes.com/rssfeedstopstor
 for post in toi_top.entries:
     print(toi_top['feed']['description'])
 
-feed https://news.ycombinator.com/rss
