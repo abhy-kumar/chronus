@@ -12,6 +12,7 @@ except:
     from tkinter import *   # if the user has python 3 installed
 
 import appdirs
+from tkinter import ttk
 
 appname = "Chronus"
 appauthor = "Abhishek Kumar"
@@ -65,13 +66,13 @@ def mainGUI(text):
         noMoreEntries[-1].pack(padx=5, pady=5)
 
     # Make button for adding RSS feeds to the file
-    addRSSButton = Button(root, text="+", command=lambda: addFeedWindow())
+    addRSSButton = ttk.Button(root, text="+", command=lambda: addFeedWindow())
     addRSSButton.pack(side="right")
     # Make button for removing RSS feeds from the list
     global removeRSSButton
-    removeRSSButton = Button(root, text="-", command=lambda: removeFeedWindow())
+    removeRSSButton = ttk.Button(root, text="-", command=lambda: removeFeedWindow())
     removeRSSButton.pack(side="right")
-    refreshRSSButton = Button(root, text="↻", command=lambda: refreshRSS())
+    refreshRSSButton = ttk.Button(root, text="↻", command=lambda: refreshRSS())
     refreshRSSButton.pack(side="right")
 
 
@@ -85,7 +86,7 @@ def addFeedWindow():
     feed = Toplevel()
     feed.wm_title("Add new RSS feed")
 
-    newFeedButton = Button(feed, text="Add New Feed",
+    newFeedButton = ttk.Button(feed, text="Add New Feed",
                            command=lambda: addFeed())
     newFeedButton.pack(side="right")
 
