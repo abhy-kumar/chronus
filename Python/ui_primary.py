@@ -29,7 +29,7 @@ class rss_core(tk.Tk):
         self.frames = {}
 
         # Add Frame list here:
-        for F in (StartPage, PageOne, PageTwo):
+        for F in (StartPage, PageOne, GraphPage):
             frame = F(container, self)
             self.frames[F] = frame
             frame.grid(row=0, column=0, sticky="nsew")
@@ -57,7 +57,7 @@ class StartPage(tk.Frame):
         button1 = ttk.Button(self, text='Page One', command=lambda: controller.show_frame(PageOne))
         button1.pack()
 
-        button1 = ttk.Button(self, text='Page Two', command=lambda: controller.show_frame(PageTwo))
+        button1 = ttk.Button(self, text='Page Two', command=lambda: controller.show_frame(GraphPage))
         button1.pack()
 
 class PageOne(tk.Frame):
@@ -69,10 +69,10 @@ class PageOne(tk.Frame):
         button1 = ttk.Button(self, text='Home', command=lambda: controller.show_frame(StartPage))
         button1.pack()
 
-class PageTwo(tk.Frame):
+class GraphPage(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
-        label = tk.Label(self, text="This is PageTwo", font=font_x)
+        label = tk.Label(self, text="This is GraphPage", font=font_x)
         label.pack(pady=10, padx=10)
 
         button1 = ttk.Button(self, text='Home', command=lambda: controller.show_frame(StartPage))
