@@ -29,7 +29,7 @@ text = []
 
 root = Tk()
 root.wm_title("Chronus")
-root.iconbitmap('iconbeta2.ico')
+root.iconbitmap('iconbeta.png')
 addRSSButton = None
 refreshRSSButton = None
 noMoreEntries = []
