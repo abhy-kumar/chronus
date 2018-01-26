@@ -55,14 +55,14 @@ def mainGUI(text):
         websites.append(Label(root, text=line))
         websites[-1].pack()
 
-        num = min(3, len(site['entries']))
+        num = min(7, len(site['entries']))
         # Top three entries from the RSS feed
         for entry in site['entries'][:num]:
             title = entry['title']
             callback = lambda link=entry['link']: openSite(link)
-            buttons.append(Button(root, text=title, command=callback))
+            buttons.append(ttk.Button(root, text=title, command=callback))
             buttons[-1].pack(padx=30, pady=15)
-        noMoreEntries.append(Label(root, text="No more entries!"))
+        noMoreEntries.append(Label(root, text="---End of List---"))
         noMoreEntries[-1].pack(padx=5, pady=5)
 
     # Make button for adding RSS feeds to the file
