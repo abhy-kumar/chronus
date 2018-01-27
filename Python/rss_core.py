@@ -37,6 +37,7 @@ refreshRSSButton = None
 noMoreEntries = []
 websites = []
 websiteButtons = []
+root.configure(background='white')
 
 
 def mainGUI(text):
@@ -60,7 +61,7 @@ def mainGUI(text):
         # Top three entries from the RSS feed
         for entry in site['entries'][:num]:
             title = entry['title']
-            
+
             callback = lambda link=entry['link']: openSite(link)
             buttons.append(ttk.Button(root, text=title, command=callback))
 
@@ -89,12 +90,11 @@ def addFeedWindow():
     feed = Toplevel()
     feed.wm_title("Add new RSS feed")
 
-    newFeedButton = ttk.Button(feed, text="Add New Feed",
-                           command=lambda: addFeed())
+    newFeedButton = ttk.Button(feed, text="Add New Feed", command=lambda: addFeed())
     newFeedButton.pack(side="right")
 
     global newFeedGet
-    newFeedGet = Entry(feed, width=50)
+    newFeedGet = ttk.Entry(feed, width=50)
     newFeedGet.pack(side="left")
 
 def removeFeed(site):
@@ -116,7 +116,7 @@ def removeFeedWindow():
         website = urls[i]
         # Create a var to hold TK command in, helps with callback looping problem (See button creation)
         removeCommand = lambda websiteURL=website: removeFeed(websiteURL)
-        websiteButtons.append(Button(remove, text=website, command=removeCommand))
+        websiteButtons.append(ttk.Button(remove, text=website, command=removeCommand))
         websiteButtons[-1].pack(padx=30, pady=15)
 
 
