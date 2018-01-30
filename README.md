@@ -1,4 +1,4 @@
-# Chronus
+<p align="center"><h1>Chronus</h1></p>
 <p align="center"><img src="https://image.ibb.co/kh2Qz6/iconbeta.png"/></p>
 
 
