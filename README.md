@@ -10,8 +10,6 @@ Cross Platform News Curator, with an added extension of Machine Learning for add
 
 Us (Abhishek, Dhruvraj and Neel)
 
-The Facemoji Team for their implementation of emotion recognition
-
 The feedparser team for their library
 
 The ACM-SVNIT team
