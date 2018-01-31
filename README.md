@@ -1,5 +1,5 @@
 # Chronus
-<p align="center"><img src="https://image.ibb.co/kh2Qz6/iconbeta.png"/></p>
+<p align="center"><img src="https://image.ibb.co/kZc7b6/iconbeta2.png"/></p>
 
 
 
