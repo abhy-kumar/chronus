@@ -1,7 +1,12 @@
-<p align="center"><h1>Chronus</h1></p>
+
+# Chronus
+<p align="center"><img src="https://image.ibb.co/kZc7b6/iconbeta2.png"/></p>
+
+<h1>Chronus</h1>
 <p align="center"><img src="https://forthebadge.com/images/badges/made-with-python.svg"/></p>
 <p align="center"><img src="https://forthebadge.com/images/badges/built-for-android.svg"/></p>
-<p align="center"><img src="https://image.ibb.co/kh2Qz6/iconbeta.png"/></p>
+
+
 
 
 
