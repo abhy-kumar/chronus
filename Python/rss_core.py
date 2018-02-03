@@ -1,10 +1,9 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
 import feedparser
 import os
 import sys
 import webbrowser
 import errno
+from bs4 import BeautifulSoup
 
 try:
     from Tkinter import *   # if the user has python 2 installed.
@@ -15,9 +14,7 @@ import appdirs
 from tkinter import ttk
 
 appname = "Chronus"
-appauthor = "Abhishek Kumar"
-
-# If the data directory doesn't exist, create it
+appauthor = "Abhishek Kumar"    # If the data directory doesn't exist, create it
 datadir = appdirs.user_data_dir(appname, appauthor)
 if (not os.path.isdir(datadir)):
     os.makedirs(datadir)
@@ -57,10 +54,11 @@ def mainGUI(text):
         # websites.append(Label(root, text=line))
         # websites[-1].pack()
 
-        num = min(10, len(site['entries']))
+        num = min(20, len(site['entries']))
         # Top three entries from the RSS feed
         for entry in site['entries'][:num]:
             title = entry['title']
+
 
             callback = lambda link=entry['link']: openSite(link)
             buttons.append(ttk.Button(root, text=title, command=callback))
