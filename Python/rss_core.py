@@ -6,15 +6,15 @@ import errno
 from bs4 import BeautifulSoup
 
 try:
-    from Tkinter import *   # if the user has python 2 installed.
+    from Tkinter import *  # if the user has python 2 installed.
 except:
-    from tkinter import *   # if the user has python 3 installed
+    from tkinter import *  # if the user has python 3 installed
 
 import appdirs
 from tkinter import ttk
 
 appname = "Chronus"
-appauthor = "Abhishek Kumar"    # If the data directory doesn't exist, create it
+appauthor = "Abhishek Kumar"  # If the data directory doesn't exist, create it
 datadir = appdirs.user_data_dir(appname, appauthor)
 if (not os.path.isdir(datadir)):
     os.makedirs(datadir)
@@ -59,7 +59,6 @@ def mainGUI(text):
         for entry in site['entries'][:num]:
             title = entry['title']
 
-
             callback = lambda link=entry['link']: openSite(link)
             buttons.append(ttk.Button(root, text=title, command=callback))
 
@@ -76,7 +75,37 @@ def mainGUI(text):
     removeRSSButton.pack(side="right")
     refreshRSSButton = ttk.Button(root, text="↻", command=lambda: refreshRSS())
     refreshRSSButton.pack(side="right")
+    cheerbutton = ttk.Button(root, text="Cheer Me Up!", command=lambda: cheerWindows())
+    cheerbutton.pack(side="left")
 
+
+def cheerWindows():
+    global cheer
+    cheer = Toplevel()
+    cheer.wm_title("Cheer Me Up!")
+
+    site = feedparser.parse('http://feeds.reuters.com/reuters/INoddlyEnoughNews')
+    num = min(7, len(site['entries']))
+
+    for entry in site['entries'][:num]:
+        title = entry['title']
+        callback = lambda link=entry['link']: openSite(link)
+        buttons.append(ttk.Button(cheer, text=title, command=callback))
+        buttons[-1].pack(padx=30, pady=15)
+
+def bored():
+    global bore
+    bore = Toplevel()
+    bore.wm_title("I am bored")
+
+    site = feedparser.parse('http://feeds.reuters.com/reuters/INoddlyEnoughNews')
+    num = min(7, len(site['entries']))
+
+    for entry in site['entries'][:num]:
+        title = entry['title']
+        callback = lambda link=entry['link']: openSite(link)
+        buttons.append(ttk.Button(cheer, text=title, command=callback))
+        buttons[-1].pack(padx=30, pady=15)
 
 def openSite(text):
     webbrowser.get().open(text)
@@ -95,6 +124,7 @@ def addFeedWindow():
     newFeedGet = ttk.Entry(feed, width=50)
     newFeedGet.pack(side="left")
 
+
 def removeFeed(site):
     for i in range(0, len(urls)):
         if site == urls[i]:
@@ -103,9 +133,11 @@ def removeFeed(site):
             continue
         with open(path, 'w') as f:
             for i in range(0, len(urls)):
-                f.write(urls[i]+"\n")
+                f.write(urls[i] + "\n")
     remove.destroy()
     refreshRSS()
+
+
 def removeFeedWindow():
     global remove
     remove = Toplevel()
@@ -165,11 +197,14 @@ def refreshRSS():
 def refreshRSSBind(self):
     refreshRSS()
 
+
 def addFeedBind(self):
     addFeedWindow()
 
+
 def removeFeedBind(self):
     removeFeedWindow()
+
 
 # Open sites.txt
 try:
