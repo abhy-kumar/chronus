@@ -1,0 +1,153 @@
+http://feeds.feedburner.com/EtsBreakingNews
+http://feeds.etonline.com/ETFashion
+http://feeds.etonline.com/ETMusic
+http://feeds.etonline.com/ETMovies
+http://feeds.feedburner.com/ET/awards
+http://feeds.etonline.com/ETTelevision
+
+
+
+http://feeds.reuters.com/reuters/INtopNews		
+Business News	http://feeds.reuters.com/reuters/INbusinessNews		
+South Asia	http://feeds.reuters.com/reuters/INsouthAsiaNews		
+World	http://feeds.reuters.com/reuters/INworldNews		
+Entertainment	http://feeds.reuters.com/reuters/INentertainmentNews		
+Hollywood	http://feeds.reuters.com/reuters/INhollywood		
+Sports	http://feeds.reuters.com/reuters/INsportsNews		
+Cricket	http://feeds.reuters.com/reuters/INcricketNews		
+F1	http://feeds.reuters.com/reuters/INformulaOne		
+Golf	http://feeds.reuters.com/reuters/INgolf		
+Technology	http://feeds.reuters.com/reuters/INtechnologyNews		
+Health	http://feeds.reuters.com/reuters/INhealth		
+Lifestyle	http://feeds.reuters.com/reuters/INlifestyle		
+Oddly Enough	http://feeds.reuters.com/reuters/INoddlyEnoughNews		
+News Video Feeds
+TITLE	COPY URL TO RSS READER		
+Breakingviews Video	http://feeds.reuters.com/reuters/INVideoBreakingviews			
+Business Video	http://feeds.reuters.com/reuters/INVideoBusiness			
+Entertainment Video	http://feeds.reuters.com/reuters/INVideoEntertainment			
+Environment Video	http://feeds.reuters.com/reuters/INVideoEnvironment			
+Lifestyle Video	http://feeds.reuters.com/reuters/INVideoLifestyle			
+Most Popular Video	http://feeds.reuters.com/reuters/INVideoMostWatched			
+Most Recent Video	http://feeds.reuters.com/reuters/VideoINLatest			
+Newsmakers	http://feeds.reuters.com/reuters/INVideoNewsmakers			
+Oddly Enough Video	http://feeds.reuters.com/reuters/INVideoOddlyEnough			
+Rough Cuts	http://feeds.reuters.com/reuters/INVideoRoughCuts			
+Technology Video	http://feeds.reuters.com/reuters/INVideoTechnology			
+Top News Video	http://feeds.reuters.com/reuters/INVideoTopNews			
+World News Video	http://feeds.reuters.com/reuters/INVideoWorldNews
+http://rss.cnn.com/rss/edition.rss
+		http://rss.cnn.com/rss/edition.rss				Add to My Yahoo!
+
+World		http://rss.cnn.com/rss/edition_world.rss				Add to My Yahoo!
+
+Africa		http://rss.cnn.com/rss/edition_africa.rss				Add to My Yahoo!
+
+Americas		http://rss.cnn.com/rss/edition_americas.rss				Add to My Yahoo!
+
+Asia		http://rss.cnn.com/rss/edition_asia.rss				Add to My Yahoo!
+
+Europe		http://rss.cnn.com/rss/edition_europe.rss				Add to My Yahoo!
+
+Middle East		http://rss.cnn.com/rss/edition_meast.rss				Add to My Yahoo!
+
+U.S.		http://rss.cnn.com/rss/edition_us.rss				Add to My Yahoo!
+
+Money		http://rss.cnn.com/rss/money_news_international.rss				Add to My Yahoo!
+
+Technology		http://rss.cnn.com/rss/edition_technology.rss				Add to My Yahoo!
+
+Science & Space		http://rss.cnn.com/rss/edition_space.rss				Add to My Yahoo!
+
+Entertainment		http://rss.cnn.com/rss/edition_entertainment.rss				Add to My Yahoo!
+
+World Sport		http://rss.cnn.com/rss/edition_sport.rss				Add to My Yahoo!
+
+Football		http://rss.cnn.com/rss/edition_football.rss				Add to My Yahoo!
+
+Golf		http://rss.cnn.com/rss/edition_golf.rss				Add to My Yahoo!
+
+Motorsport		http://rss.cnn.com/rss/edition_motorsport.rss				Add to My Yahoo!
+
+Tennis		http://rss.cnn.com/rss/edition_tennis.rss				Add to My Yahoo!
+
+Travel		http://rss.cnn.com/rss/edition_travel.rss				Add to My Yahoo!
+
+Video		http://rss.cnn.com/rss/cnn_freevideo.rss			
+
+Most Recent		http://rss.cnn.com/rss/cnn_latest.rss
+
+
+
+https://timesofindia.indiatimes.com/rssfeedstopstories.cms
+https://timesofindia.indiatimes.com/rssfeeds/1221656.cms
+https://timesofindia.indiatimes.com/rssfeeds/-2128936835.cms
+https://timesofindia.indiatimes.com/rssfeeds/296589292.cms
+https://timesofindia.indiatimes.com/rssfeeds/7098551.cms
+https://timesofindia.indiatimes.com/rssfeeds/1898055.cms
+https://timesofindia.indiatimes.com/rssfeeds/4719148.cms
+https://timesofindia.indiatimes.com/rssfeeds/3908999.cms
+https://timesofindia.indiatimes.com/rssfeeds/-2128672765.cms
+https://timesofindia.indiatimes.com/rssfeeds/2647163.cms
+https://timesofindia.indiatimes.com/rssfeeds/5880659.cms
+https://timesofindia.indiatimes.com/rssfeeds/913168846.cms
+https://timesofindia.indiatimes.com/rssfeeds/1081479906.cms
+https://timesofindia.indiatimes.com/rssfeeds/2886704.cms
+https://timesofindia.indiatimes.com/rssfeedsvideo/3812907.cms
+https://timesofindia.indiatimes.com/rssfeedsvideo/3812908.cms
+https://timesofindia.indiatimes.com/rssfeedsvideo/3813445.cms
+https://timesofindia.indiatimes.com/rssfeedsvideo/3813456.cms
+https://timesofindia.indiatimes.com/rssfeedsvideo/3813443.cms
+
+
+https://news.google.com/news/rss/?ned=us&gl=US&hl=en
+https://news.google.com/news/rss/headlines/section/topic/BUSINESS?ned=us&hl=en&gl=US
+https://news.google.com/news/rss/headlines/section/topic/TECHNOLOGY?ned=us&hl=en&gl=US
+https://news.google.com/news/rss/headlines/section/topic/ENTERTAINMENT?ned=us&hl=en&gl=US
+https://news.google.com/news/rss/headlines/section/topic/SPORTS?ned=us&hl=en&gl=US
+https://news.google.com/news/rss/headlines/section/topic/SCIENCE?ned=us&hl=en&gl=US
+https://news.google.com/news/rss/headlines/section/topic/HEALTH?ned=us&hl=en&gl=US
+
+
+
+https://www.aljazeera.com/xml/rss/all.xml
+
+http://www.huffingtonpost.in/feeds/index.xml
+
+
+http://rss.nytimes.com/services/xml/rss/nyt/Business.xml
+http://rss.nytimes.com/services/xml/rss/nyt/Technology.xml
+http://rss.nytimes.com/services/xml/rss/nyt/Sports.xml
+http://rss.nytimes.com/services/xml/rss/nyt/Science.xml
+http://rss.nytimes.com/services/xml/rss/nyt/Health.xml
+
+
+http://feeds.feedburner.com/TodayIFoundOut
+
+
+website   http://www.mirror.co.uk/news/weird-news/
+
+
+
+http://feeds.feedburner.com/ndtvnews-offbeat-news
+http://feeds.feedburner.com/ndtvnews-top-stories
+http://feeds.feedburner.com/ndtvprofit-latest
+http://feeds.feedburner.com/gadgets360-latest
+http://feeds.feedburner.com/ndtvsports-latest
+
+https://www.huffingtonpost.com/section/comedy/feed
+https://www.huffingtonpost.com/section/weird-news/feed
+
+
+website  https://www.goodnewsnetwork.org/category/news/
+
+
+https://feeds.feedburner.com/SunnySkyz
+
+website   https://timesofindia.indiatimes.com/good-news/goodnews.cms
+
+https://www.msn.com/en-us/news/good-news website 
+
+
+
+

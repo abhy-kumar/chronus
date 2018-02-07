@@ -1,0 +1,5 @@
+http://feeds.feedburner.com/EtsBreakingNews
+http://rss.cnn.com/rss/cnn_latest.rss
+http://feeds.reuters.com/reuters/INtopNews
+https://timesofindia.indiatimes.com/rssfeedstopstories.cms
+http://feeds.feedburner.com/ndtvnews-top-stories

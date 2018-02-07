@@ -1,7 +1,0 @@
-Syntax
-Return the backgroundColor property:
-
-object.style.backgroundColor
-Set the backgroundColor property:
-
-object.style.backgroundColor = "color|transparent|initial|inherit"
