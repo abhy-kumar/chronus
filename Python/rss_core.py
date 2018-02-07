@@ -77,14 +77,15 @@ def mainGUI(text):
     refreshRSSButton.pack(side="right")
     cheerbutton = ttk.Button(root, text="Cheer Me Up!", command=lambda: cheerWindows())
     cheerbutton.pack(side="left")
-
+    borebutton = ttk.Button(root, text="I Am Bored", command=lambda: bored())
+    borebutton.pack(side="left")
 
 def cheerWindows():
     global cheer
     cheer = Toplevel()
     cheer.wm_title("Cheer Me Up!")
 
-    site = feedparser.parse('http://feeds.reuters.com/reuters/INoddlyEnoughNews')
+    site = feedparser.parse('https://feeds.feedburner.com/SunnySkyz')
     num = min(7, len(site['entries']))
 
     for entry in site['entries'][:num]:
@@ -104,7 +105,7 @@ def bored():
     for entry in site['entries'][:num]:
         title = entry['title']
         callback = lambda link=entry['link']: openSite(link)
-        buttons.append(ttk.Button(cheer, text=title, command=callback))
+        buttons.append(ttk.Button(bore, text=title, command=callback))
         buttons[-1].pack(padx=30, pady=15)
 
 def openSite(text):
