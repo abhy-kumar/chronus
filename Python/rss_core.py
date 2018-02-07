@@ -3,7 +3,7 @@ import os
 import sys
 import webbrowser
 import errno
-from bs4 import BeautifulSoup
+
 
 try:
     from Tkinter import *  # if the user has python 2 installed.
