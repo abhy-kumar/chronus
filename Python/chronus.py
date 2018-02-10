@@ -1,16 +1,17 @@
-import feedparser
+import feedparser       # This library is VVIP. It is used for parsing the RSS feeds. 
 import os
 import sys
 import webbrowser
 import errno
 
+# Rest of the libraries are for system compatibilites and usage of internet and all.
 
 try:
     from Tkinter import *  # if the user has python 2 installed.
 except:
     from tkinter import *  # if the user has python 3 installed
 
-import appdirs
+import appdirs              # for Saving User's preferences and feeds
 from tkinter import ttk
 
 appname = "Chronus"
@@ -27,16 +28,18 @@ buttons = []
 text = []
 
 root = Tk()
-root.wm_title("Chronus")
-root.iconbitmap('iconbeta2.ico')
+root.wm_title("Chronus")                    # title of application
+root.iconbitmap('iconbeta2.ico')            #icon goes here
 addRSSButton = None
 refreshRSSButton = None
 noMoreEntries = []
 websites = []
 websiteButtons = []
-root.configure(background='white')
 
+# ^Above entries are for initializing the respective variables.
+root.configure(background='white')          # bg
 
+# all functions starting with def are for specfic functions. THis is is for main GUI
 def mainGUI(text):
     global addRSSButton, refreshRSSButton, noMoreEntries
     global websites, buttons, urls
@@ -80,7 +83,7 @@ def mainGUI(text):
     borebutton = ttk.Button(root, text="I Am Bored", command=lambda: bored())
     borebutton.pack(side="left")
 
-def cheerWindows():
+def cheerWindows():                 # This function is for making the user happy by showing happy news
     global cheer
     cheer = Toplevel()
     cheer.wm_title("Cheer Me Up!")
@@ -94,7 +97,7 @@ def cheerWindows():
         buttons.append(ttk.Button(cheer, text=title, command=callback))
         buttons[-1].pack(padx=30, pady=15)
 
-def bored():
+def bored():                    # if the user is bored....
     global bore
     bore = Toplevel()
     bore.wm_title("I am bored")
@@ -108,7 +111,7 @@ def bored():
         buttons.append(ttk.Button(bore, text=title, command=callback))
         buttons[-1].pack(padx=30, pady=15)
 
-def openSite(text):
+def openSite(text):             # Open sites, uses the 'os' library as mentioned above in import statements
     webbrowser.get().open(text)
 
 
